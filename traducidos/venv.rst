@@ -8,7 +8,7 @@ Entonrnos Virtuales y Paquetes
 Introducción
 ============
 
-``orig``
+``orig p1``
 
 Python applications will often use packages and modules that don't
 come as part of the standard library.  Applications will sometimes
@@ -16,7 +16,7 @@ need a specific version of a library, because the application may
 require that a particular bug has been fixed or the application may be
 written using an obsolete version of the library's interface.
 
-``trad``
+``trad p1``
 
 Las aplicaciones Python a menudo utilizarán paquetes y módulos que no
 son parte de la biblioteca estándar. Las aplicaciones algunas veces 
@@ -25,7 +25,7 @@ requerir que un bug particular haya sido solucionado o porque quizás
 la aplicación fue escrita usando una versión obsoleta de la interfaz 
 de la biblioteca.
 
-``orig``
+``orig p2``
 
 This means it may not be possible for one Python installation to meet
 the requirements of every application.  If application A needs version
@@ -33,7 +33,7 @@ the requirements of every application.  If application A needs version
 the requirements are in conflict and installing either version 1.0 or 2.0
 will leave one application unable to run.
 
-``trad``
+``trad p2``
 
 Esto significa que puede no ser posible para una instalación de Python
 satisfacer los requisitos de cada aplicación. Si la aplicación A necesita
@@ -42,19 +42,21 @@ versión 2.0, entonces, los requerimientos están en conflicto y ya sea
 instalando la versión 1.0 o 2.0 se dejará una aplicación sin capacidad de 
 ejecución.
 
-``orig``
+``orig p3``
 
 The solution for this problem is to create a :term:`virtual
 environment` (often shortened to "virtualenv"), a self-contained
 directory tree that contains a Python installation for a particular
 version of Python, plus a number of additional packages.
 
-``trad``
+``trad p3``
 
 La solución para este problema es crear un :term:`entorno virtual` (a menudo
-abreviado como "virtualenv"), un arbol de directorio autocontenido que incluye
+abreviado como "virtualenv"), que consiste en un arbol de directorio autocontenido que incluye
 una instalación de Python para una versión particular, mas un número de paquetes
 adicionales.
+
+``orig p4``
 
 Different applications can then use different virtual environments.
 To resolve the earlier example of conflicting requirements,
@@ -62,6 +64,15 @@ application A can have its own virtual environment with version 1.0
 installed while application B has another virtualenv with version 2.0.
 If application B requires a library be upgraded to version 3.0, this will
 not affect application A's environment.
+
+``trad p4``
+
+Diferentes aplicaciones pueden utilizar diferentes entornos virtuales.
+Para resolver el exemplo previo de requerimientos conflictivos, la aplicación A
+puede tener su propio enterno virtual con la versión 1.0 instalada, mientras
+que la aplicación B tiene otro virtualenv con la versión 2.0.
+Si la aplicación B requiere que una biblioteca sea actualizada a la versión 3.0, 
+esto no afectará al entorno de la aplicación A.
 
 
 Creating Virtual Environments
