@@ -42,10 +42,19 @@ versión 2.0, entonces, los requerimientos están en conflicto y ya sea
 instalando la versión 1.0 o 2.0 se dejará una aplicación sin capacidad de 
 ejecución.
 
+``orig``
+
 The solution for this problem is to create a :term:`virtual
 environment` (often shortened to "virtualenv"), a self-contained
 directory tree that contains a Python installation for a particular
 version of Python, plus a number of additional packages.
+
+``trad``
+
+La solución para este problema es crear un :term:`entorno virtual` (a menudo
+abreviado como "virtualenv"), un arbol de directorio autocontenido que incluye
+una instalación de Python para una versión particular, mas un número de paquetes
+adicionales.
 
 Different applications can then use different virtual environments.
 To resolve the earlier example of conflicting requirements,
