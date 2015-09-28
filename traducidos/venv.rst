@@ -8,14 +8,16 @@ Entonrnos Virtuales y Paquetes
 Introducción
 ============
 
-```orig```
+``orig``
+
 Python applications will often use packages and modules that don't
 come as part of the standard library.  Applications will sometimes
 need a specific version of a library, because the application may
 require that a particular bug has been fixed or the application may be
 written using an obsolete version of the library's interface.
 
-```trad```
+``trad``
+
 Las aplicaciones Python a menudo utilizarán paquetes y módulos que no
 son parte de la biblioteca estándar. Las aplicaciones algunas veces 
 necesitarán una  versión específica de una biblioteca, porque puede 
@@ -23,14 +25,16 @@ requerir que un bug particular haya sido solucionado o porque quizás
 la aplicación fue escrita usando una versión obsoleta de la interfaz 
 de la biblioteca.
 
-```orig```
+``orig``
+
 This means it may not be possible for one Python installation to meet
 the requirements of every application.  If application A needs version
 1.0 of a particular module but application B needs version 2.0, then
 the requirements are in conflict and installing either version 1.0 or 2.0
 will leave one application unable to run.
 
-```trad```
+``trad``
+
 Esto significa que puede no ser posible para una instalación de Python
 satisfacer los requisitos de cada aplicación. Si la aplicación A necesita
 la versión 1.0 de un módulo particular pero la aplicación B necesita la
