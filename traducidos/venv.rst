@@ -75,8 +75,10 @@ Si la aplicación B requiere que una biblioteca sea actualizada a la versión 3.
 esto no afectará al entorno de la aplicación A.
 
 
-Creating Virtual Environments
-=============================
+Creando Entornos Virtuales
+==========================
+
+``orig p5``
 
 The script used to create and manage virtual environments is called
 :program:`pyvenv`.  :program:`pyvenv` will usually install the most
@@ -84,6 +86,14 @@ recent version of Python that you have available; the script is also
 installed with a version number, so if you have multiple versions of
 Python on your system you can select a specific Python version by
 running ``pyvenv-3.4`` or whichever version you want.
+
+``trad p5``
+
+El script que se utiliza para crear y gestionar entornos virtuales el denominado
+:program:`pyvenv`.  :program:`pyvenv` usualmente instalará la versión más reciente
+de Python que tengas disponible; el script es además instalado con un número
+de versión, entonces si tenés múltiples versiones de Python en tu sistema
+podés seleccionar una versión específica ejecutando ``pyvenv-3.4`` o la versión que quieras.
 
 To create a virtualenv, decide upon a directory
 where you want to place it and run :program:`pyvenv` with the
