@@ -95,15 +95,34 @@ de Python que tengas disponible; el script es además instalado con un número
 de versión, entonces si tenés múltiples versiones de Python en tu sistema
 podés seleccionar una versión específica ejecutando ``pyvenv-3.4`` o la versión que quieras.
 
+``orig p6``
+
 To create a virtualenv, decide upon a directory
 where you want to place it and run :program:`pyvenv` with the
 directory path::
 
    pyvenv tutorial-env
 
+``trad p6``
+   
+Para crear un virtualenv, elegí un directorio donde quieras colocarlo y 
+ejecutá :program:`pyvenv` con la ruta del directorio::
+
+   pyvenv tutorial-env
+
+``orig p7``
+
 This will create the ``tutorial-env`` directory if it doesn't exist,
 and also create directories inside it containing a copy of the Python
 interpreter, the standard library, and various supporting files.
+
+``trad p7``
+
+Esto creará el directorio ``tutorial-env`` si no existe, y además creará 
+directorios dentro que contienen una copia de el intérprete de Python, 
+la biblioteca estándar y otros archivos auxiliares.
+
+``orig p8``
 
 Once you've created a virtual environment, you need to
 activate it.
@@ -120,6 +139,22 @@ On Unix or MacOS, run::
 :program:`csh` or :program:`fish` shells, there are alternate
 ``activate.csh`` and ``activate.fish`` scripts you should use
 instead.)
+
+``trad p8``
+
+Una vez que has creado un entorno virtual, necesitás activarlo.
+
+En Windows, ejecutá::
+
+  tutorial-env/Scripts/activate
+
+En Unix o MacOS, ejecutá::
+
+  source tutorial-env/bin/activate
+  
+(Este script fué escrito para el shell bash. Si usas los shells 
+:program:`csh` or :program:`fish`, deberías utilizar los scripts 
+alternativos ``activate.csh`` y ``activate.fish``)
 
 Activating the virtualenv will change your shell's prompt to show what
 virtualenv you're using, and modify the environment so that running
